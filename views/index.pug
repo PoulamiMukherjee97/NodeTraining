@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul 
+    li 
+      a(href='/api/employees') Create Employee - POST
+    li 
+      a(href='/api/employees') List Employees - GET 
+    li
+      a(href='/api/employees/1') Employee Details - GET
+    li
+      a(href='/api/employees/1') Update Employee - PUT
+    li 
+      a(href='/api/employees/1') Delete Employee - DELETE
